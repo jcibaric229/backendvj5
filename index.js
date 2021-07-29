@@ -106,5 +106,5 @@ server.put('/api/poruke/:id', (req, res) => {
 // })
 //sad smo napravili server treba jos par detalja
 //port na kojem ce server slusati 
-const port=3001
-server.listen(port,()=> console.log(`Posluzitelj slusa na portu ${port}`)) //callback funkcija koja ce se pozvati kad se pokrene
+const PORT=process.env.PORT || 3001
+server.listen(PORT,()=> console.log(`Posluzitelj slusa na portu ${PORT}`)) //callback funkcija koja ce se pozvati kad se pokrene
